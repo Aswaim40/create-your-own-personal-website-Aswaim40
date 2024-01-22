@@ -1,1 +1,35 @@
+#include <iostream></iostream>
+htmlFile << "    <h1>Austin Swaim</h1>\n";
 
+htmlFile << "    <p>I'm Austin, I go to Lyon College where I play football. I like to play video games and like to watch sports games.
+
+</p>\n";
+
+htmlFile << "    <h2>My Favorite Hobby</h2>\n";
+htmlFile << "    <p>My Favorite hobby or interest is football. Football is my quiet place. It is my escape to reality. I like football because it gives me peace of mind in my toughest times.</p>\n";
+
+htmlFile << "    <h3>Favorite Books</h3>\n";
+htmlFile << "    <ol>\n";
+htmlFile << "        <li>Catch-22</li>\n";
+htmlFile << "        <li>The Great Gatsby</li>\n";
+htmlFile << "        <li>Heart of Darkness</li>\n";
+htmlFile << "    </ol>\n";
+
+htmlFile << "    <h3>Least Favorite Movies</h3>\n";
+htmlFile << "    <ul>\n";
+htmlFile << "        <li>Frankenstein</li>\n";
+htmlFile << "        <li>Left Behind</li>\n";
+htmlFile << "        <li>Million Ways to Die in the West</li>\n";
+htmlFile << "    </ul>\n";
+
+htmlFile << "</body>\n";
+htmlFile << "</html>\n";
+
+htmlFile.close();
+std::cout << "HTML file 'index.html' created successfully.\n";
+} else {
+    std::cerr << "Error: Unable to open the HTML file.\n";
+}
+
+return 0;
+}
